@@ -50,6 +50,7 @@ PostgreSQL — Banco de dados relacional
 TypeORM — Mapeamento objeto-relacional (ORM)
 
 Bibliotecas e Ferramentas
+
 jsonwebtoken — Geração e validação de tokens JWT
 
 bcryptjs — Criptografia de senhas
