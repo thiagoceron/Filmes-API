@@ -1,63 +1,65 @@
-API - Catálogo de Filmes e Atores
+🎬 API - Catálogo de Filmes e Atores
 
 📖 Sobre o Projeto
 
-Esta é uma API RESTful desenvolvida como projeto para a disciplina de Desenvolvimento de Sistemas Web. O objetivo é gerenciar um catálogo de filmes e seus respectivos atores, implementando funcionalidades completas de CRUD, autenticação de usuários e upload de arquivos, seguindo as melhores práticas de desenvolvimento de software.
+Este é um projeto de API RESTful desenvolvido para a disciplina de Desenvolvimento de Sistemas Web, com o objetivo de gerenciar um catálogo de filmes e seus respectivos atores. O sistema implementa funcionalidades completas de CRUD, autenticação de usuários e upload de arquivos, seguindo as melhores práticas de desenvolvimento de software.
 
-A arquitetura do projeto é modular, separando as responsabilidades em diferentes camadas (Controllers, Services, Repositories) para garantir um código limpo, organizado e de fácil manutenção.
+A arquitetura do projeto é modular, com separação de responsabilidades em diferentes camadas (Controllers, Services, Repositories), garantindo um código limpo, organizado e de fácil manutenção.
 
 ✨ Funcionalidades Principais
+Autenticação de Usuários
 
-Autenticação de Usuários: Sistema completo de registro e login com sessões seguras utilizando tokens JWT (JSON Web Token).
+Sistema completo de registro e login com autenticação via JWT (JSON Web Token).
 
-Segurança:
+Senhas criptografadas com bcryptjs.
 
-Senhas criptografadas no banco de dados com 
-
-bcryptjs.
-
-Proteção de rotas, onde apenas usuários autenticados podem acessar os recursos principais.
+Proteção de rotas: apenas usuários autenticados podem acessar os recursos principais.
 
 Sistema de recuperação de senha (lógica implementada no back-end).
 
-Gerenciamento de Filmes: CRUD completo (Criar, Ler, Atualizar, Deletar) para a entidade de Filmes.
+Gerenciamento de Filmes
 
-Gerenciamento de Atores: CRUD completo para a entidade de Atores, com um relacionamento 1 para N com Filmes (um filme pode ter vários atores).
+CRUD completo (Criar, Ler, Atualizar, Deletar) para a entidade Filme.
 
+Gerenciamento de Atores
 
-Upload de Avatar: Funcionalidade de upload de imagens para o avatar dos atores, utilizando Multer para o gerenciamento de arquivos. Os avatares antigos são removidos para otimizar o espaço em disco.
+CRUD completo para a entidade Ator.
 
+Relacionamento 1:N com Filmes (um filme pode ter vários atores).
 
+Upload de Avatar
 
-Validação de Dados: Validação robusta dos dados de entrada em todas as rotas utilizando Celebrate e Joi para garantir a integridade dos dados.
+Upload de imagens para o avatar dos atores usando Multer.
+
+Os avatares antigos são removidos automaticamente, otimizando o uso de espaço em disco.
+
+Validação de Dados
+
+Validação robusta com Celebrate e Joi em todas as rotas, garantindo a integridade dos dados recebidos.
 
 🛠️ Tecnologias Utilizadas
-O back-end foi construído com as seguintes tecnologias:
 
-Node.js
+Node.js — Ambiente de execução JavaScript
 
-TypeScript
+TypeScript — Tipagem estática para JavaScript
 
-Express - Framework para a criação da API.
+Express — Framework para criação da API
 
-PostgreSQL - Banco de dados relacional.
+PostgreSQL — Banco de dados relacional
 
-TypeORM - ORM (Object-Relational Mapper) para a comunicação com o banco de dados.
+TypeORM — Mapeamento objeto-relacional (ORM)
 
+Bibliotecas e Ferramentas
+jsonwebtoken — Geração e validação de tokens JWT
 
-jsonwebtoken - Para geração e validação de tokens de autenticação.
+bcryptjs — Criptografia de senhas
 
+Multer — Upload e gerenciamento de arquivos
 
-bcryptjs - Para a criptografia de senhas.
+Celebrate e Joi — Validação de dados das requisições
 
+ts-node-dev — Reinicialização automática durante o desenvolvimento
 
-Multer - Middleware para o upload de arquivos.
+tsconfig-paths — Suporte a aliases de importação
 
-
-Celebrate & Joi - Para a validação de dados das requisições.
-
-ts-node-dev - Para o desenvolvimento com reinicialização automática.
-
-tsconfig-paths - Para o uso de atalhos (aliases) nos caminhos de importação.
-
-CORS - Para permitir o acesso de diferentes origens (front-end).
+CORS — Permissão de acesso para diferentes origens (ex: front-end)
