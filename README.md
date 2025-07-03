@@ -1,6 +1,7 @@
 API - Catálogo de Filmes e Atores
 
 📖 Sobre o Projeto
+
 Esta é uma API RESTful desenvolvida como projeto para a disciplina de Desenvolvimento de Sistemas Web. O objetivo é gerenciar um catálogo de filmes e seus respectivos atores, implementando funcionalidades completas de CRUD, autenticação de usuários e upload de arquivos, seguindo as melhores práticas de desenvolvimento de software.
 
 A arquitetura do projeto é modular, separando as responsabilidades em diferentes camadas (Controllers, Services, Repositories) para garantir um código limpo, organizado e de fácil manutenção.
